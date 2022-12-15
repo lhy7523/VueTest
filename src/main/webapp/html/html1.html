@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+
+
+<div id="app">
+    {{msg}}<br>
+    {{group[1]}}<br>
+    <h1 v-text="msg"></h1><br>
+    <div v-html="name"></div>
+</div>
+
+<script>
+    var Vue = new Vue({
+        el:"#app",
+        data:{
+            msg:"<h1>hello world!</h1>",
+            group:["xiaoming","xiaohong"],
+            name:"<h2>cross</h2>"
+        },
+        // created:function () {
+        //     alert("bagayalu")
+        // }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+    <script>
+        window.onload = function (ev) {
+
+            var vue = new Vue({
+                el:"#app"
+            })
+        }
+
+
+    </script>
+</head>
+<body>
+<div id="app">
+    <el-pagination
+            background
+            :current-page="1"
+            :page-sizes="[100,200,300]"
+            :page-size="100"
+            layout=" total ,sizes ,prev, pager, next,jumper"
+            :total="1000">
+    </el-pagination>
+</div>
+
+</body>
+</html>
